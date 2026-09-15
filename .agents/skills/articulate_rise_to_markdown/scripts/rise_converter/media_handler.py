@@ -23,7 +23,13 @@ def validate_url(url):
 def download_file(url, output_path):
     """Downloads a file from a URL to the specified local path."""
     try:
-        urllib.request.urlretrieve(url, output_path)
+        import urllib.parse
+        parsed = urllib.parse.urlparse(url)
+        encoded_path = urllib.parse.quote(parsed.path)
+        encoded_url = urllib.parse.urlunparse(
+            (parsed.scheme, parsed.netloc, encoded_path, parsed.params, parsed.query, parsed.fragment)
+        )
+        urllib.request.urlretrieve(encoded_url, output_path)
         return True
     except Exception as e:
         print(f"Failed to download {url}: {e}")
