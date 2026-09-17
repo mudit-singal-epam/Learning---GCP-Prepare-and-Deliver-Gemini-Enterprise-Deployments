@@ -1,8 +1,6 @@
 # Role-Based Agent Decomposition
 
----
-
-Introduction to structural defense
+## Introduction to structural defense
 
 Understanding the threats described previously is the first step; the next is structural defense.
 
@@ -10,19 +8,11 @@ The most effective way to contain those threats is to divide a complex workflow 
 
 This lesson explores how role-based decomposition turns a potential breach into a recoverable error, using the Warranty Claim System as the case study.
 
-![Image](alternate secure route.png)
+## The Design Question: What's the Worst Case?
 
-### The Design Question: What's the Worst Case?
-
-When we show up to the present moment with all of our senses, we invite the world to fill us with joy.
-
-The pains of the past are behind us.
-
-The future has yet to unfold.
-
-But the now is full of beauty simply waiting for our attention.
-
-For every agent you design, ask one question: "What is the worst outcome a hallucination or injection can cause, given this agent's tools and data access?"
+----
+> For every agent you design, ask one question: "What is the worst outcome a hallucination or injection can cause, given this agent's tools and data access?"
+----
 
 Then narrow the role until that worst case is a recoverable error rather than an irreversible action.
 
@@ -30,17 +20,7 @@ This reframes security from **"how do I stop every attack"** to **"how do I ensu
 
 An agent whose worst case is **"routes to the wrong specialist"** is fundamentally safer than one whose worst case is **"ships a free product,"** regardless of how clever the model is.
 
-### Three Narrow Roles in the Warranty Claim System
-
-When we show up to the present moment with all of our senses, we invite the world to fill us with joy.
-
-The pains of the past are behind us.
-
-The future has yet to unfold.
-
-But the now is full of beauty simply waiting for our attention.
-
-Three Narrow Roles in the Warranty Claim System
+## Three Narrow Roles in the Warranty Claim System
 
 The Warranty Claim System applies this principle across three agents, each with a deliberately constrained boundary.
 
@@ -52,17 +32,7 @@ The Warranty Claim System applies this principle across three agents, each with 
 
 Because each role is narrow, a single injection occurs within a context that lacks the tools to cause real harm. Decomposition is the structural foundation that the identity, perimeter, and content layers later enforce.
 
-### The Two-Question Audit
-
-When we show up to the present moment with all of our senses, we invite the world to fill us with joy.
-
-The pains of the past are behind us.
-
-The future has yet to unfold.
-
-But the now is full of beauty simply waiting for our attention.
-
-The Two-Question Audit
+## The Two-Question Audit
 
 This lesson gives you a repeatable method to produce threat mapping, turning security from an undefined goal into a reviewable artifact that the later layers are built to enforce.
 
@@ -70,13 +40,11 @@ For each agent, ask two questions: **"what is its most dangerous failure mode?"*
 
 Let us examine the Warranty Claim System:
 
-- Case Manager: worst case: misclassification or routing to the wrong agent → control: it holds no execution tools, so the damage is bounded to a routing error the gateway can catch.
-- Data Vault: worst case: mass exfiltration of customer data → controls: a network perimeter around the data, an input-validation callback that rejects malformed serial numbers, and an instruction to return only the status.
-- Logistics Liaison: worst case: automated financial fraud → control: mandatory human-in-the-loop (HITL) approval before any financial API fires.
+1. Case Manager: worst case: misclassification or routing to the wrong agent → control: it holds no execution tools, so the damage is bounded to a routing error the gateway can catch.
+2. Data Vault: worst case: mass exfiltration of customer data → controls: a network perimeter around the data, an input-validation callback that rejects malformed serial numbers, and an instruction to return only the status.
+3. Logistics Liaison: worst case: automated financial fraud → control: mandatory human-in-the-loop (HITL) approval before any financial API fires.
 
 The mapping doubles as a design test and a build plan.
-
-Click each tab to learn more.
 
 ### Testing
 

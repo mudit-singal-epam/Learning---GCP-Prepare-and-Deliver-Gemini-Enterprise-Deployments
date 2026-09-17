@@ -1,7 +1,5 @@
 # Course summary
 
----
-
 Congratulations! You have completed the course **Secure your Agents with Gemini Enterprise Agent Platform**.
 
 In this course, you learned how to move from agents secured as an afterthought to agents secured by design, layer by layer, with identity and access as the foundation for reaching enterprise data safely.
@@ -14,8 +12,4 @@ At the core, you learned to make an agent act on behalf of a signed-in user thro
 
 Finally, you then learned to confine that access with security perimeters: VPC Service Controls, network egress allowlists, and runtime content guardrails (ADK callbacks and Model Armor). The result is secure, authorized, and fully auditable access to enterprise data that scales across an entire fleet of agents.
 
-![Image](complete.png)
-
 Congratulations on completing this course!
-
-![Image](confetti2.png)

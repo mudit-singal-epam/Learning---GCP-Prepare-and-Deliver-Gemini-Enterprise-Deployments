@@ -1,8 +1,6 @@
 # Module introduction
 
----
-
-Design secure agent boundaries
+## Design secure agent boundaries
 
 In this module, you'll design secure agent boundaries to protect complex workflows from security threats.
 
@@ -13,8 +11,6 @@ You'll analyze the worst-case scenario for each agent design to determine necess
 By establishing these architectural boundaries, you'll learn how to build a foundation where individual failures remain contained rather than cascading into system-wide breaches.
 
 By the end, you'll understand how these layers compose and where each one covers the gaps the others leave.
-
-![Image](CSS Graphic Crop (5).png)
 
 By the end of this module, you'll be able to:
 

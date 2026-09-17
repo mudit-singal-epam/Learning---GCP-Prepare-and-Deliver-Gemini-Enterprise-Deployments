@@ -1,8 +1,6 @@
 # Module introduction
 
----
-
-Runtime content guardrails
+## Runtime content guardrails
 
 In this module, you'll analyze how to implement runtime content guardrails to validate payloads inside authorized connections.
 
@@ -11,8 +9,6 @@ You'll explore the use of ADK tool callbacks to establish a bidirectional integr
 You'll examine the role of Model Armor in scanning natural language payloads for injection patterns and evaluate how Semantic Governance Policies act as intent-aware firewalls to enforce business policy.
 
 Finally, you'll integrate session and memory isolation techniques to ensure that concurrent interactions remain strictly separated and free from cross-user data leakage.
-
-![Image](CSS Graphic Crop (5).png)
 
 By the end of this module, you'll be able to:
 

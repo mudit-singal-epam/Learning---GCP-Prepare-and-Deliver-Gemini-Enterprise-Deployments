@@ -1,14 +1,12 @@
 # Zero-Trust Routing
 
----
-
-Lesson introduction
+## Lesson introduction
 
 The macro perimeter guards the project's edge.
 
 Inside it, you still need to govern traffic between agents and traffic going out to legitimate external systems. Two controls cover those distinct segments of the traffic surface.
 
-Network Isolation: Inspecting Internal Traffic at Layer 7
+## Network Isolation: Inspecting Internal Traffic at Layer 7
 
 When we show up to the present moment with all of our senses, we invite the world to fill us with joy.
 
@@ -22,19 +20,9 @@ Cloud Next Generation Firewall performs Layer-7 inspection on agent-to-agent (A2
 
 Layer-7 means it parses payload content, not just source and destination IP and port, so it can recognize patterns like a SQL-injection fragment embedded in what otherwise looks like a legitimate A2A call.
 
-![Image](security features.png)
-
 A compromised Case Manager that attempts to send a malicious query to the Data Agent through a side channel can be caught here, below the application layer, before the destination agent ever processes it.
 
-Secure Web Proxy and Outbound Traffic Control
-
-When we show up to the present moment with all of our senses, we invite the world to fill us with joy.
-
-The pains of the past are behind us.
-
-The future has yet to unfold.
-
-But the now is full of beauty simply waiting for our attention.
+## Secure Web Proxy and Outbound Traffic Control
 
 Secure Web Proxy governs egress for agents that legitimately call external systems.
 

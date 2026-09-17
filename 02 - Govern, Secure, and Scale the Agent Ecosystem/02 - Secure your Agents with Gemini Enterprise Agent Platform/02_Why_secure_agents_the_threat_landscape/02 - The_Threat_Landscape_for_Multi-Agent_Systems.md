@@ -1,18 +1,14 @@
 # The Threat Landscape for Multi-Agent Systems
 
----
-
-Introduction
+## Introduction
 
 When you deploy multiple AI agents that transfer data to each other and call real-world tools, the attack surface grows with every step. A single malicious instruction embedded in a customer's warranty claim can spread across agents and trigger a fraudulent shipment if the architecture does not contain it.  
 
 LLMs and multi-agent architectures face four categories of risk that standard web-application security doesn't fully address, and each grows more dangerous the more autonomous the system becomes. This lesson names those four risks so the rest of the course can systematically defend against them.
 
-Prompt Injection: Attacking the Model's Reasoning
+## Prompt Injection: Attacking the Model's Reasoning
 
-![Image](phishing malware ghost.png)
-
-Multi-agent system threat landscape
+*Multi-agent system threat landscape*
 
 Prompt injection is the most pervasive threat. An attacker embeds a malicious instruction inside content the agent processes: a claim description, a GitHub issue title, a document summary, or even a product name stored in a database the agent queries.
 
@@ -20,7 +16,6 @@ If the agent can't distinguish trusted instructions from untrusted data, it may 
 
 There are two variants: Direct prompt injection and indirect prompt injection.
 
-Click on the items to learn more.
 
 ### Direct Prompt Injection
 
@@ -34,7 +29,7 @@ Indirect prompt injection is more challenging to detect as it involves payloads 
 
 These injections are part of the tool's output and are treated as trusted context, making them harder to identify and mitigate.
 
-Lateral Movement, Exfiltration, and Excessive Agency
+## Lateral Movement, Exfiltration, and Excessive Agency
 
 Lateral movement happens when a compromised agent reaches systems it is not authorized to access.
 
@@ -50,21 +45,23 @@ The risk is not always malicious: a model can hallucinate PII from its context w
 
 Excessive agency is the foundational design concept for these: an agent whose tool set is broader than its role requires. If the model hallucinates an action and the tool is available, the action can fire.
 
-The test is simple: if removing a tool from an agent doesn't break its stated purpose, the tool shouldn't be there.
+---
+> The test is simple: if removing a tool from an agent doesn't break its stated purpose, the tool shouldn't be there.
+---
 
-How the Threats Compound
+## How the Threats Compound
 
 These four threats rarely appear alone. A prompt injection that causes lateral movement to a data-rich agent creates the conditions for exfiltration.
 
 An agent with excessive agency that gets injected becomes an execution engine for the attacker's intent. The goal of secure design, and of this course, is to ensure any single failure is contained: a misclassification stays a routing error, not a financial loss or a leaked customer record.
 
-**Note:** These risks are AI-specific but compound standard infrastructure vulnerabilities. A misconfigured IAM policy is dangerous in any system; combined with an agent that accepts arbitrary instructions, it becomes a direct path to automated financial fraud. That intersection is exactly why identity and access is the focus of this course.
+> [!Note]
+>
+> These risks are AI-specific but compound standard infrastructure vulnerabilities. A misconfigured IAM policy is dangerous in any system; combined with an agent that accepts arbitrary instructions, it becomes a direct path to automated financial fraud. That intersection is exactly why identity and access is the focus of this course.
 
-The Case Studies for This Course
+## The Case Studies for This Course
 
-![Image](certificate clipboard course study.png)
-
-Warranty Claim System and DevOps Assistant case studies
+*Warranty Claim System and DevOps Assistant case studies*
 
 To defend against the threats mentioned in the previous lesson, this course works through two complementary use cases: one enterprise system you study to examine every defense operating at scale, and one focused agent you build to understand the foundational identity concepts through practical application.
 
@@ -72,14 +69,10 @@ Both apply [**Google's Secure AI Framework (SAIF)**](https://safety.google/intl/
 
 The **Warranty Claim System** is the enterprise system you study. It is a three-agent reference architecture on Gemini Enterprise Agent Platform that automates customer warranty processing: a Case Manager routes claims but holds no execution tools, a Data Vault is the only agent with database access and returns minimal fields, and a Logistics Agent calls shipping and discount APIs but cannot access the database.
 
-Confirm your knowledge of the three-agent reference architecture by clicking each card.
+* **Case Manager Agent** - Routes claims within the system but does not possess tools for execution.
+* **Data Vault Agent** - The sole agent with database access, providing minimal field data.
+* **Logistics Agent** - Interacts with shipping and discount APIs but lacks database access.
 
-* Case Manager Agent
-* Routes claims within the system but does not possess tools for execution.
-* Data Vault Agent
-* The sole agent with database access, providing minimal field data.
-* Logistics Agent
-* Interacts with shipping and discount APIs but lacks database access.
 Its decomposition and layered controls show how prompt injection, lateral movement, data exfiltration, and excessive agency are *contained*—any single failure stays a recoverable error rather than a fraudulent shipment or a PII leak.
 
 You'll return to this architecture when each defensive layer is introduced.

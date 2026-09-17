@@ -1,7 +1,5 @@
 # Course introduction
 
----
-
 Welcome to the course **Secure your Agents with Gemini Enterprise Agent Platform**.
 
 In this course, you’ll learn to establish centralized, zero-trust control and visibility over your AI workforce.
@@ -30,10 +28,6 @@ Finally, you'll examine how to build the DevOps Assistant, an agent that reads a
 
 In this course, you will learn to:
 
-![Image](objective3.png)
-
-**✓**Implement governance, monitoring, and observability for enterprise agents using the Agent Gateway and Model Armor.
-
-**✓**Configure secure authentication and identity protocols, including delegated identity, service account impersonation, and multi-legged OAuth flows.
-
-**✓**Scale the agent ecosystem by managing agent sprawl and ensuring secure, authorized access to enterprise data through centralized oversight.
+- Implement governance, monitoring, and observability for enterprise agents using the Agent Gateway and Model Armor.
+- Configure secure authentication and identity protocols, including delegated identity, service account impersonation, and multi-legged OAuth flows.
+- Scale the agent ecosystem by managing agent sprawl and ensuring secure, authorized access to enterprise data through centralized oversight.

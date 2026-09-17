@@ -1,8 +1,6 @@
 # Module introduction
 
----
-
-Delegated identity and multi-legged OAuth
+## Delegated identity and multi-legged OAuth
 
 In this module, you'll explore the critical distinction between an agent's native identity and user-delegated authority.
 
@@ -11,8 +9,6 @@ You'll analyze how to implement delegated identity using multi-legged OAuth flow
 You'll examine the mechanics of the Agent Platform Auth Manager and connectors, which broker these secure consent flows to keep sensitive tokens out of agent application code.
 
 By the end of the module, you'll integrate these concepts to build agents that safely borrow user authority, ensuring that every tool call remains fully attributable, audit-compliant, and scoped to the user's explicit access levels.
-
-![Image](CSS Graphic Crop (5).png)
 
 By the end of this module, you'll be able to:
 

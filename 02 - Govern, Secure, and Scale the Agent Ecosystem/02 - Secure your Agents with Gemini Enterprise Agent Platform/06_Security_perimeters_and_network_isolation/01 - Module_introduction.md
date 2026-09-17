@@ -1,8 +1,6 @@
 # Module introduction
 
----
-
-Security perimeters and network isolation
+## Security perimeters and network isolation
 
 In this module, you'll analyze how to implement network-level security perimeters to contain agent activity.
 
@@ -11,8 +9,6 @@ You'll explore how VPC Service Controls act as a macro perimeter to block data e
 You'll also examine Layer-7 inspection of internal traffic to detect malicious payloads within authorized connections and implement Secure Web Proxy egress allowlists to prevent unauthorized external communication.
 
 By integrating these network-level controls with your existing identity and access layers, you'll build a zero-trust architecture that prevents an agent from reaching destinations or moving data outside its authorized scope.
-
-![Image](CSS Graphic Crop (5).png)
 
 By the end of this module, you'll be able to:
 
