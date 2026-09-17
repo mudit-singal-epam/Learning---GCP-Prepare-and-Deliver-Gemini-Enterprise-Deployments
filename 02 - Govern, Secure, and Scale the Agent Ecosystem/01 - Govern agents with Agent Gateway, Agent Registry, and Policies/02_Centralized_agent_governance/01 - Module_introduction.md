@@ -8,8 +8,6 @@ By deploying the [Gemini Enterprise Agent Platform](https://docs.cloud.google.co
 
 This architecture eliminates the need for individual developers to manage complex networking primitives, allowing your security teams to maintain strict, consistent compliance boundaries while accelerating agent deployments from weeks to days.
 
-![Image](CSS Graphic Crop (5).png)
-
 By the end of this module, you'll be able to:
 
 * Describe the architectural components of the [Agent Gateway](https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/gateways/agent-gateway-overview).

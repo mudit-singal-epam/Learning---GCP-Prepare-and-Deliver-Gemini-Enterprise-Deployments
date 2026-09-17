@@ -10,8 +10,4 @@ You learned to establish unique **Agent Identities** using **mTLS**, enforce gra
 
 By using the **Agent Registry** for dynamic tool discovery and the **CONTENT\_AUTHZ** extension with **Model Armor** for content sanitization, you explored how to accelerate agent deployment while ensuring absolute network isolation, enterprise-grade threat mitigation, and complete auditability through **Cloud Trace** and **Security Command Center**.
 
-![Image](complete.png)
-
 Congratulations on completing this course!
-
-![Image](confetti2.png)

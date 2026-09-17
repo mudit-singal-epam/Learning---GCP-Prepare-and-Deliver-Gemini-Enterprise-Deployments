@@ -8,8 +8,6 @@ You'll learn how to use the [Agent Registry](https://docs.cloud.google.com/agent
 
 Additionally, you'll explore how to use OpenTelemetry and Cloud Trace to audit every step of the agentic execution path, capturing distributed traces that map the entire journey of a user prompt.
 
-![Image](CSS Graphic Crop (5).png)
-
 By the end of this module, you'll be able to:
 
 * Register and manage Google APIs and third-party MCP servers in the [Agent Registry](https://docs.cloud.google.com/agent-registry/overview).

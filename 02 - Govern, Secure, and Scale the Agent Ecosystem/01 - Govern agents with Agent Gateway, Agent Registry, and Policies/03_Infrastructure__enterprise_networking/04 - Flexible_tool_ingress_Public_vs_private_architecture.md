@@ -1,7 +1,5 @@
 # Flexible tool ingress (Public vs. private architecture)
 
-### Heading
-
 In this lesson, you'll learn about the two primary networking topologies for hosting your internal tools (MCP servers) on Cloud Run: Default (Public Ingress) and Secure (Private Ingress).
 
 Choosing the wrong ingress model can either expose sensitive database APIs to the internet or create insurmountable infrastructure bottlenecks for your developers.
@@ -10,17 +8,7 @@ By analyzing the trade-offs of both architectures, you will design a deployment 
 
 You'll learn how to build and deploy tools in both modes, ensuring you can support rapid development cycles while maintaining absolute production security.
 
-### Default path: Cloud run with public ingress
-
-When we show up to the present moment with all of our senses, we invite the world to fill us with joy.
-
-The pains of the past are behind us.
-
-The future has yet to unfold.
-
-But the now is full of beauty simply waiting for our attention.
-
-### Heading
+## Default path: Cloud run with public ingress
 
 In the **Default Ingress Pattern**, internal tools (MCP servers) are deployed to Cloud Run with the ingress configuration set to all.
 
@@ -29,17 +17,7 @@ In the **Default Ingress Pattern**, internal tools (MCP servers) are deployed to
 
 **Pros/Cons:** Extremely simple to set up, requires no custom domains, and is ideal for sandbox development or rapid proof-of-concept deployments. However, it does not satisfy strict corporate compliance rules that forbid public endpoints entirely.
 
-### Secure path: Cloud run with private networking
-
-When we show up to the present moment with all of our senses, we invite the world to fill us with joy.
-
-The pains of the past are behind us.
-
-The future has yet to unfold.
-
-But the now is full of beauty simply waiting for our attention.
-
-### Heading
+## Secure path: Cloud run with private networking
 
 In the **Private Ingress Pattern**, Cloud Run ingress is restricted to internal-and-cloud-load-balancing.
 

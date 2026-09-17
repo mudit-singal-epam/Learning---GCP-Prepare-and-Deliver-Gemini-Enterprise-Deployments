@@ -14,16 +14,9 @@ This course is designed for Security Teams, Cloud Architects, and AI Platform En
 
 In this course, you will learn to:
 
-![Image](objective3.png)
-
-**✓**Design end-to-end zero-trust governance using the Agent Gateway as a centralized policy enforcement point.
-
-**✓**Automate the deployment of the Agent Gateway and VPC network using Terraform.
-
-**✓**Implement unique Agent Identities (mTLS personas) and granular per-tool authorization with IAP and Common Expression Language (CEL) conditions.
-
-**✓**Establish content guardrails to prevent injection attacks and data leakage using Model Armor and Cloud DLP.
-
-**✓**Manage tool discovery with the Agent Registry and audit execution using distributed tracing in Cloud Trace.
-
-**✓**Detect and classify agent-specific security threats using Security Command Center.
+- Design end-to-end zero-trust governance using the Agent Gateway as a centralized policy enforcement point.
+- Automate the deployment of the Agent Gateway and VPC network using Terraform.
+- Implement unique Agent Identities (mTLS personas) and granular per-tool authorization with IAP and Common Expression Language (CEL) conditions.
+- Establish content guardrails to prevent injection attacks and data leakage using Model Armor and Cloud DLP.
+- Manage tool discovery with the Agent Registry and audit execution using distributed tracing in Cloud Trace.
+- Detect and classify agent-specific security threats using Security Command Center.

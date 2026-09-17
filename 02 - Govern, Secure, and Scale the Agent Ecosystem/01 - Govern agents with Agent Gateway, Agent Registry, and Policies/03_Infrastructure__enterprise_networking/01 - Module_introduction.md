@@ -1,6 +1,6 @@
 # Module introduction
 
-Infrastructure and enterprise networking
+## Infrastructure and enterprise networking
 
 In this module, you will learn how to master the core ingestion and transformation models of the Cortex Framework, and apply scalable compliance controls to newly ingested enterprise data. You will explore the Cortex Dual-Dataset Architecture, using Change Data Capture (CDC) pipelines to ingest continuous data streams from operational systems (SAP, Salesforce, and Oracle EBS) into BigQuery. You will also learn how to use Dataplex to apply governance policies and security controls inherited from the source systems.
 
